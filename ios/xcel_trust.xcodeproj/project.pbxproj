@@ -14,6 +14,8 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-xcel_trust-xcel_trustTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-xcel_trust-xcel_trustTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		EB14A24E2A4692B500AC2469 /* RNTrustWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB14A24D2A4692B500AC2469 /* RNTrustWallet.swift */; };
+		EB49A1592A46938400BBB66A /* RNTrustWallet.m in Sources */ = {isa = PBXBuildFile; fileRef = EB49A1582A46938400BBB66A /* RNTrustWallet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,9 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-xcel_trust.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-xcel_trust.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = xcel_trust/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-xcel_trust-xcel_trustTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xcel_trust-xcel_trustTests.release.xcconfig"; path = "Target Support Files/Pods-xcel_trust-xcel_trustTests/Pods-xcel_trust-xcel_trustTests.release.xcconfig"; sourceTree = "<group>"; };
+		EB14A24C2A4692B400AC2469 /* xcel_trust-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "xcel_trust-Bridging-Header.h"; sourceTree = "<group>"; };
+		EB14A24D2A4692B500AC2469 /* RNTrustWallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNTrustWallet.swift; sourceTree = "<group>"; };
+		EB49A1582A46938400BBB66A /* RNTrustWallet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNTrustWallet.m; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -92,6 +97,9 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				EB14A24D2A4692B500AC2469 /* RNTrustWallet.swift */,
+				EB49A1582A46938400BBB66A /* RNTrustWallet.m */,
+				EB14A24C2A4692B400AC2469 /* xcel_trust-Bridging-Header.h */,
 			);
 			name = xcel_trust;
 			sourceTree = "<group>";
@@ -207,7 +215,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1430;
 					};
 				};
 			};
@@ -412,6 +420,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB14A24E2A4692B500AC2469 /* RNTrustWallet.swift in Sources */,
+				EB49A1592A46938400BBB66A /* RNTrustWallet.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
@@ -432,6 +442,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-xcel_trust-xcel_trustTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -459,6 +470,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-xcel_trust-xcel_trustTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = xcel_trustTests/Info.plist;
@@ -500,6 +512,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = xcel_trust;
+				SWIFT_OBJC_BRIDGING_HEADER = "xcel_trust-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -526,6 +539,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = xcel_trust;
+				SWIFT_OBJC_BRIDGING_HEADER = "xcel_trust-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};

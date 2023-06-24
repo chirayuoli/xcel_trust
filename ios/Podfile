@@ -45,6 +45,8 @@ target 'xcel_trust' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
+  pod 'TrustWalletCore'
+
   target 'xcel_trustTests' do
     inherit! :complete
     # Pods for testing

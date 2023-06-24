@@ -485,6 +485,13 @@ PODS:
     - React-logger (= 0.72.0)
     - React-perflogger (= 0.72.0)
   - SocketRocket (0.6.0)
+  - SwiftProtobuf (1.22.0)
+  - TrustWalletCore (3.2.0):
+    - TrustWalletCore/Core (= 3.2.0)
+  - TrustWalletCore/Core (3.2.0):
+    - TrustWalletCore/Types
+  - TrustWalletCore/Types (3.2.0):
+    - SwiftProtobuf
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
     - Yoga (~> 1.14)
@@ -552,6 +559,7 @@ DEPENDENCIES:
   - React-runtimescheduler (from `../node_modules/react-native/ReactCommon/react/renderer/runtimescheduler`)
   - React-utils (from `../node_modules/react-native/ReactCommon/react/utils`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - TrustWalletCore
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -569,6 +577,8 @@ SPEC REPOS:
     - libevent
     - OpenSSL-Universal
     - SocketRocket
+    - SwiftProtobuf
+    - TrustWalletCore
     - YogaKit
 
 EXTERNAL SOURCES:
@@ -704,9 +714,11 @@ SPEC CHECKSUMS:
   React-utils: c12d2e75c8bbc727939ddc4319ed95493395ed5a
   ReactCommon: 517b45ed311ba9146aa8b55a8ef6617425f7448e
   SocketRocket: fccef3f9c5cedea1353a9ef6ada904fde10d6608
+  SwiftProtobuf: 40bd808372cb8706108f22d28f8ab4a6b9bc6989
+  TrustWalletCore: 969cf53892b56a5f48f430fca80f3b4c4dbac761
   Yoga: 1d6727ed193122f6adaf435c3de1a768326ff83b
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 8eca55d86bc0548f3751caffcbc734817b3391c1
+PODFILE CHECKSUM: 3fbb2342a13868af3071be11690ae984dd4be487
 
 COCOAPODS: 1.12.1
